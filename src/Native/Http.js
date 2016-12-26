@@ -1,4 +1,4 @@
-var _elm_lang$http$Native_Http = function() {
+var _evax$http$Native_Http = function() {
 
 
 // ENCODING AND DECODING
@@ -102,6 +102,7 @@ function send(xhr, body)
 			return;
 
 		case 'StringBody':
+		case 'OpaqueBody':
 			xhr.setRequestHeader('Content-Type', body._0);
 			xhr.send(body._1);
 			return;
